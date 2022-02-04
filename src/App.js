@@ -1,22 +1,59 @@
 import "./App.css";
+import React, { Suspense } from "react";
 import BaseScreen from "./screens/BaseScreen";
-import HomeScreen from "./screens/HomeScreen";
-import CategoryScreen from "./screens/CategoryScreen";
-import GenderScreen from "./screens/GenderScreen";
-import ProductScreen from "./screens/ProductScreen";
-import NotFoundScreen from "./screens/NotFoundScreen";
+import LoadingSpinner from "./components/layouts/LoadingSpinner";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+const HomeScreen = React.lazy(() => import("./screens/HomeScreen"));
+const CategoryScreen = React.lazy(() => import("./screens/CategoryScreen"));
+const GenderScreen = React.lazy(() => import("./screens/GenderScreen"));
+const ProductScreen = React.lazy(() => import("./screens/ProductScreen"));
+const NotFoundScreen = React.lazy(() => import("./screens/NotFoundScreen"));
 
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<BaseScreen />}>
-          <Route index element={<HomeScreen />} />
-          <Route path="/category" element={<CategoryScreen />} />
-          <Route path="/gender" element={<GenderScreen />} />
-          <Route path="/product" element={<ProductScreen />} />
-          <Route path="*" element={<NotFoundScreen />} />
+          <Route
+            index
+            element={
+              <Suspense fallback={<LoadingSpinner />}>
+                <HomeScreen />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/category"
+            element={
+              <Suspense fallback={<LoadingSpinner />}>
+                <CategoryScreen />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/gender"
+            element={
+              <Suspense fallback={<LoadingSpinner />}>
+                <GenderScreen />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/product"
+            element={
+              <Suspense fallback={<LoadingSpinner />}>
+                <ProductScreen />
+              </Suspense>
+            }
+          />
+          <Route
+            path="*"
+            element={
+              <Suspense fallback={<LoadingSpinner />}>
+                <NotFoundScreen />
+              </Suspense>
+            }
+          />
         </Route>
       </Routes>
     </BrowserRouter>
