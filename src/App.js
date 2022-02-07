@@ -31,7 +31,23 @@ const App = () => {
             }
           />
           <Route
+            path="/category/:id"
+            element={
+              <Suspense fallback={<LoadingSpinner />}>
+                <CategoryScreen />
+              </Suspense>
+            }
+          />
+          <Route
             path="/gender"
+            element={
+              <Suspense fallback={<LoadingSpinner />}>
+                <GenderScreen />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/gender/:id"
             element={
               <Suspense fallback={<LoadingSpinner />}>
                 <GenderScreen />
