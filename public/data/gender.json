@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "title": "Hommes",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, ducimus labore! Dolorem modi expedita beatae esse, tempore pariatur deserunt, sapiente fuga impedit sed dolore corrupti magni omnis veritatis nisi illum!",
+		"image": "https://picsum.photos/300"
+    },
+    {
+        "id": 2,
+        "title": "Femmes",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, ducimus labore! Dolorem modi expedita beatae esse, tempore pariatur deserunt, sapiente fuga impedit sed dolore corrupti magni omnis veritatis nisi illum!",
+		"image": "https://picsum.photos/300"
+    },
+    {
+        "id": 3,
+        "title": "Enfants",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, ducimus labore! Dolorem modi expedita beatae esse, tempore pariatur deserunt, sapiente fuga impedit sed dolore corrupti magni omnis veritatis nisi illum!",
+		"image": "https://picsum.photos/300"
+    },
+    {
+        "id": 4,
+        "title": "Bébés",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, ducimus labore! Dolorem modi expedita beatae esse, tempore pariatur deserunt, sapiente fuga impedit sed dolore corrupti magni omnis veritatis nisi illum!",
+		"image": "https://picsum.photos/300"
+    }
+]

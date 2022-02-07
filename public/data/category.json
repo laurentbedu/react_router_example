@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "title": "Pantalons",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, ducimus labore! Dolorem modi expedita beatae esse, tempore pariatur deserunt, sapiente fuga impedit sed dolore corrupti magni omnis veritatis nisi illum!",
+		"image": "https://picsum.photos/300"
+	},
+    {
+        "id": 2,
+        "title": "T-shirts",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, ducimus labore! Dolorem modi expedita beatae esse, tempore pariatur deserunt, sapiente fuga impedit sed dolore corrupti magni omnis veritatis nisi illum!",
+		"image": "https://picsum.photos/300"
+    },
+    {
+        "id": 3,
+        "title": "Pulls",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, ducimus labore! Dolorem modi expedita beatae esse, tempore pariatur deserunt, sapiente fuga impedit sed dolore corrupti magni omnis veritatis nisi illum!",
+		"image": "https://picsum.photos/300"
+    },
+    {
+        "id": 4,
+        "title": "Chaussures",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, ducimus labore! Dolorem modi expedita beatae esse, tempore pariatur deserunt, sapiente fuga impedit sed dolore corrupti magni omnis veritatis nisi illum!",
+		"image": "https://picsum.photos/300"
+    },
+    {
+        "id": 5,
+        "title": "Sous-vêtements",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, ducimus labore! Dolorem modi expedita beatae esse, tempore pariatur deserunt, sapiente fuga impedit sed dolore corrupti magni omnis veritatis nisi illum!",
+		"image": "https://picsum.photos/300"
+    },
+    {
+        "id": 6,
+        "title": "Accessoires",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, ducimus labore! Dolorem modi expedita beatae esse, tempore pariatur deserunt, sapiente fuga impedit sed dolore corrupti magni omnis veritatis nisi illum!",
+		"image": "https://picsum.photos/300"
+    }
+]
