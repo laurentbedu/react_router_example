@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { useParams } from "react-router-dom";
-import GenericCard from "../components/generics/genericCard";
+import GenericCard from "../components/generics/GenericCard";
 import { Category } from "../models/category.model";
 import { Product } from "../models/product.model";
 

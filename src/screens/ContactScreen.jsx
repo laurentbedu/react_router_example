@@ -1,27 +1,13 @@
+import GenericForm from "../components/generics/GenericForm";
+
 const ContactScreen = () => {
 
-  const handleSubmit = (evt) => {
-    evt.preventDefault();
-    const form = evt.currentTarget;//.closest('form');
-    const formData = new FormData(form);
-    const jsonData = Object.fromEntries(formData.entries());
-    const body = JSON.stringify(jsonData);
-    fetch("http://localhost:5000/contact", {
-      method:"post",
-      headers: {
-        "content-type":"application/json"
-      },
-      body
-    })
-    .then(resp => resp.text())
-    .then(console.log)
-    .catch(console.log);
-  }
+ 
 
   return (
     <>
       <h1>ContactScreen</h1>
-      <form onSubmit={handleSubmit}>
+      <GenericForm method="post" endpoint="http://localhost:5000/contact" submitButtonText="Envoyer">
         <div className="mb-3">
           <label htmlFor="email" className="form-label">
             Adresse mail
@@ -35,13 +21,24 @@ const ContactScreen = () => {
         </div>
         <div className="mb-3">
           <label htmlFor="fullname" className="form-label">
-            Nom / Prénom
+            Nom
           </label>
           <input
             type="text"
             className="form-control"
-            id="fullname"
-            name="fullname"
+            id="lastname"
+            name="lastname"
+          />
+        </div>
+        <div className="mb-3">
+          <label htmlFor="fullname" className="form-label">
+            Prénom
+          </label>
+          <input
+            type="text"
+            className="form-control"
+            id="firstname"
+            name="firstname"
           />
         </div>
         <div className="mb-3">
@@ -56,10 +53,7 @@ const ContactScreen = () => {
             
           ></textarea>
         </div>
-        <button type="submit" className="btn btn-primary">
-          Envoyer
-        </button>
-      </form>
+      </GenericForm>
     </>
   );
 };
