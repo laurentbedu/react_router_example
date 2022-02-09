@@ -8,6 +8,7 @@ const CategoryScreen = React.lazy(() => import("./screens/CategoryScreen"));
 const GenderScreen = React.lazy(() => import("./screens/GenderScreen"));
 const ProductScreen = React.lazy(() => import("./screens/ProductScreen"));
 const NotFoundScreen = React.lazy(() => import("./screens/NotFoundScreen"));
+const ContactScreen = React.lazy(() => import("./screens/ContactScreen"));
 
 const App = () => {
   return (
@@ -59,6 +60,14 @@ const App = () => {
             element={
               <Suspense fallback={<LoadingSpinner />}>
                 <ProductScreen />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/contact"
+            element={
+              <Suspense fallback={<LoadingSpinner />}>
+                <ContactScreen />
               </Suspense>
             }
           />
