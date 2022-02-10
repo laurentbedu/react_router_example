@@ -13,3 +13,12 @@ main {
   margin-left: 50%;
   transform: translateY(-50%) ;
 }
+
+@media print {
+  body{
+    background-color: white;
+  }
+  button{
+    display: none !important;
+  }
+}

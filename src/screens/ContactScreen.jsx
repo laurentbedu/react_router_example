@@ -2,8 +2,6 @@ import GenericForm from "../components/generics/GenericForm";
 
 const ContactScreen = () => {
 
- 
-
   return (
     <>
       <h1>ContactScreen</h1>
